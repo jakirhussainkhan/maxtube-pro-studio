@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maxtube-pro-studio"
+version = "1.0.0"
+description = "MaxTube Pro Studio - Studio-grade multi-platform media and audio extraction workstation."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Jakir Hussain Khan" },
+]
+keywords = [
+    "maxtube-pro-studio",
+    "media-downloader",
+    "audio-extractor",
+    "yt-dlp",
+    "ffmpeg",
+    "flask",
+]
+dependencies = [
+    "flask>=3.0.0",
+    "yt-dlp>=2025.01.01",
+    "pyngrok>=7.1.0",
+    "requests>=2.31.0",
+    "mutagen>=1.47.0",
+    "pillow>=10.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/jakirhussainkhan/maxtube-pro-studio"
+Repository = "https://github.com/jakirhussainkhan/maxtube-pro-studio.git"
+
+[tool.setuptools]
+py-modules = ["app", "config", "run", "version"]

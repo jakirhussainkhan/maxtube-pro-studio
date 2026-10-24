@@ -1,0 +1,75 @@
+# ---------------------------------------------------------------------------
+# MaxTube Pro Studio - strict ignore rules
+# ---------------------------------------------------------------------------
+
+# Secrets & local credentials (never commit these)
+.env
+.env.*
+!.env.example
+TOKEN
+TOKEN.*
+*.token
+*.pem
+*.key
+secrets.*
+credentials.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+.python-version
+*.egg-info/
+.eggs/
+build/
+dist/
+.eggs/
+pip-wheel-metadata/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+
+# Runtime media & temporary storage
+downloads/*
+!downloads/.gitkeep
+temp/*
+!temp/.gitkeep
+temp_zips/*
+!temp_zips/.gitkeep
+*.part
+*.ytdl
+*.tmp
+*.log
+
+# PyInstaller / packaging artifacts
+*.spec.bak
+*.exe
+*.dll
+*.pkg
+*.pyz
+
+# OS & editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
